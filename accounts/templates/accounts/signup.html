@@ -1,8 +1,10 @@
-
-{% extends 'base_layouts.html' %}
-
-{% block content %}
+{% extends 'base_layouts.html' %} {% block content %}
 
 <h1>Sign up Page</h1>
+<form action="" class="site-form" action="/accounts/signup" method="post">
+  {{ form }}
 
-    {% endblock %}
+  <input type="submit" value="SignUp" />
+</form>
+
+{% endblock %}
